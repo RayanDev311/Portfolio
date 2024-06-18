@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+.logo .logo-heading {
+    padding: 0 6rem;
+    cursor: crosshair;
+}
+.hamburger {
+    display: none;
+    font-size:  25px;
+}
+.cross-icon {
+    display: none;
+}
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+}
+.menu .menu-items {
+    padding: 0.5rem 1rem;
+}
+.links {
+    color: whitesmoke;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+.links:hover {
+    border-bottom: 2px solid whitesmoke;
+}
+.hero {
+    display: flex;
+    margin-top: 50px;
+    padding: 50px 120px;
+    align-items: center;
+}
+.hero .hero-info {
+    width: 80%;
+    text-align: left;
+}
+.hero .hero-img {
+    width: 20%;
+    margin-left: 6.25rem;
+    display: flex;
+    justify-content: center;
+}
+.hero .hero-img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.hero .hero-info .btn {
+    padding: 8px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    font-family: cursive;
+}
+.hero .hero-info .btn:hover {
+    padding: 8px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    transition: 0.2s;
+    transform: scale(1.1)
+}
+.main {
+    background-color: rgb(199, 179, 220);
+    padding: 0 120px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title h3 {
+    font-weight: 30;
+}
+.main .card {
+    display: flex;
+}
+.card .card1 , .card2 {
+    background-color: whitesmoke;
+    margin: 0 5px 15px;
+    padding: 0 20px;
+    text-align: left;
+    width: 100%;
+}
+.projects {
+    padding: 0 120px;
+    margin-bottom: 80px;
+}
+.projects .description {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px 5px rgb(247, 246, 248);
+    border-radius: 8px;
+    margin: 8px;
+}
+.img-project img {
+    width: 260px;
+    height: 160px;
+}
+.descr {
+    margin-left: 15px;
+}
+.descr .info span {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 15px;
+    }
+    footer {
+        padding: 5px;
+        text-align: center;
+    }
+    .social-links a {
+        color: white;
+        background-color: black;
+        padding: 8px;
+        border-radius: 30%;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+        transition: all 0.3s ease;
+        transform: scale(1.3);
+    }
+
+
+
+
+@media (max-width:599px) {
+   .hero {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        padding: 25px;
+   }
+   .hero .hero-info {
+    text-align: center;
+   }
+   .hero .hero-img {
+    margin-left: 0;
+   }
+   .main, .projects {
+    padding: 0 20px;
+   }
+   .main .card , .projects .description {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    padding: 0;
+   }
+   .main .title , .projects .title {
+    align-items: center;
+    justify-content: left;
+   }
+   .main a {
+    display: none;
+   }
+}
+@media (min-width:856px) and (max-width:1024px) {
+    .menu .menu-list {
+        display: flex;
+        list-style: none;
+    }
+    .menu .menu-items {
+        padding: 0.5rem 1rem;
+    }
+}
+@media (min-width:900px) {
+   
+}
