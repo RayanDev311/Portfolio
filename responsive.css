@@ -24,7 +24,8 @@
 /*taille téléphone*/
 @media screen and (min-width:280px) and (max-width:576px) {
     .logo {
-        padding: 0 3rem;
+        padding: 0 10px;
+        margin: 0;
     }
     .hamburger {
         display: block;
@@ -33,13 +34,16 @@
     .menu {
         position: absolute;
         right: 0;
-        padding: 0 2rem;
-        top: 75px;
-        background-image: linear-gradient(180deg, #ddaff4, #bd4cf6, #7809af);
+        top: 60px;
+        background-color: blueviolet;
         display: none;
         transition: all 0.25s;
+        width: 100%;
+        height: 60px;
     }
-    .menu .menu-list {
+    .menu .menu-list a {
+        padding: 5px;
+        display: flex;
         flex-direction: column;
     }
 }
